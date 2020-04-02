@@ -10,7 +10,7 @@ This is a repo for the final project on ML
 ## Report & Presentation
 * *ICML2020 Template - in progress* – report source
 * https://skoltech.instructure.com/courses/2361/discussion_topics/10733 – general guidlines
-* file:///Users/litleo/Downloads/Final_Project_Guideline.pdf – report guidlines
+* https://skoltech.instructure.com/courses/2361/files/158268/download?wrap=1 – report guidlines
 
 ## Sources
 * https://github.com/locuslab/icnn - repo with TF implementation of input-convex-nns
