@@ -7,6 +7,11 @@ This is a repo for the final project on ML
 * ResNET + ?
 * ConvAE + CelebA
 
+## Report & Presentation
+* *ICML2020 Template - in progress* – report source
+* https://skoltech.instructure.com/courses/2361/discussion_topics/10733 – general guidlines
+* file:///Users/litleo/Downloads/Final_Project_Guideline.pdf – report guidlines
+
 ## Sources
 * https://github.com/locuslab/icnn - repo with TF implementation of input-convex-nns
 * https://arxiv.org/pdf/1609.07152.pdf - paper by Amos, describing a general approach
