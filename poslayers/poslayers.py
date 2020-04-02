@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score
 
 class Dense(nn.Linear):
     def __init__(self, *args,**kwargs):
-        super(PosDense, self).__init__(*args,**kwargs)
+        super(Dense, self).__init__(*args,**kwargs)
     
     def get_sparsity(self):
         data = self.weight.data
