@@ -1,0 +1,61 @@
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2020-03-31 18:36:50.990680: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Traceback (most recent call last):
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1659, in _create_c_op
+    c_op = c_api.TF_FinishOperation(op_desc)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Dimension 1 in both shapes must be equal, but are 2 and 1. Shapes are [?,2] and [?,1].
+	From merging shape 0 with other shapes. for 'concat/concat_dim' (op: 'Pack') with input shapes: [?,2], [?,1].
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./icnn.py", line 310, in <module>
+    main()
+  File "./icnn.py", line 82, in main
+    model = Model(nFeatures, nLabels, sess, args.model, nGdIter=30)
+  File "./icnn.py", line 115, in __init__
+    E0_ = f(self.x_, self.y0_)
+  File "./icnn.py", line 238, in f_picnn
+    xy = tf.concat(1, (x, y))
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py", line 180, in wrapper
+    return target(*args, **kwargs)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/ops/array_ops.py", line 1253, in concat
+    dtype=dtypes.int32).get_shape().assert_is_compatible_with(
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1039, in convert_to_tensor
+    return convert_to_tensor_v2(value, dtype, preferred_dtype, name)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1097, in convert_to_tensor_v2
+    as_ref=False)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1175, in internal_convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/ops/array_ops.py", line 1102, in _autopacking_conversion_function
+    return _autopacking_helper(v, dtype, name or "packed")
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/ops/array_ops.py", line 1054, in _autopacking_helper
+    return gen_array_ops.pack(elems_as_tensors, name=scope)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/ops/gen_array_ops.py", line 5448, in pack
+    "Pack", values=values, axis=axis, name=name)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1823, in __init__
+    control_input_ops)
+  File "/Users/litleo/opt/miniconda3/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1662, in _create_c_op
+    raise ValueError(str(e))
+ValueError: Dimension 1 in both shapes must be equal, but are 2 and 1. Shapes are [?,2] and [?,1].
+	From merging shape 0 with other shapes. for 'concat/concat_dim' (op: 'Pack') with input shapes: [?,2], [?,1].
