@@ -19,3 +19,6 @@ This is a repo for the final project on ML
 * https://arxiv.org/pdf/1909.13082v2.pdf - paper by Korotin, describing a couple of architectures in appendix
 * https://docs.google.com/spreadsheets/d/1zNm02EqpN855odlE-SOPIRvJwtfs1ZzQt_Q59nES4ho/edit#gid=0 - spreadsheet with all projects, our goes by the number 29
 * https://github.com/bhpfelix/Variational-Autoencoder-PyTorch – code for VAE
+
+## Datasets
+* https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg - img_align_celeba.zip
