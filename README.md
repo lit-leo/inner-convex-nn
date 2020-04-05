@@ -1,16 +1,16 @@
-# input-convex-nn
-This is a repo for the final project on ML
+# inner-convex-nn
+Extreme sparsity by Input Convex Neural Networks.
 
 ## Experiments
 * FC + MNIST
 * U-NET + LungCT
 * ResNET + Cifar10
 * ConvAE + CelebA(reduced to 40k images)
-* AlexNET + CATS/DOGS - unsuccessful
+* AlexNET + CATS/DOGS
 
 ## Report & Presentation
-* https://www.overleaf.com/2571898361wmdjmgbtfnqx – report source
-* https://www.overleaf.com/4454897728sydfxhybjvtp – presentation source
+* https://www.overleaf.com/read/hcvrgydykdtw – report source
+* https://www.overleaf.com/read/snxwfrszvtys – presentation source
 * https://skoltech.instructure.com/courses/2361/discussion_topics/10733 – general guidlines
 * https://skoltech.instructure.com/courses/2361/files/158268/download?wrap=1 – report guidlines
 
