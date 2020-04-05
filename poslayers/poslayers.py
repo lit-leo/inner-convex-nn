@@ -18,8 +18,8 @@ class Dense(nn.Linear):
         data = self.weight.data
         return (data == 0).sum().item() / (data.shape[0] * data.shape[1])
     
-    def l1reg(self):
-        l1_reg = torch.tensor(0., requires_grad=True)
+    def l1reg(self, device='cpu'):
+        l1_reg = torch.tensor(0., requires_grad=True).to(device)
         for name, W in self.named_parameters():
             l1_reg = l1_reg + W.norm(1)
         return l1_reg
@@ -35,8 +35,8 @@ class PosDense(nn.Linear):
         data = self.weight.data
         return (data == 0).sum().item() / (data.shape[0] * data.shape[1])
     
-    def l1reg(self):
-        l1_reg = torch.tensor(0., requires_grad=True)
+    def l1reg(self, device):
+        l1_reg = torch.tensor(0., requires_grad=True).to(device)
         for name, W in self.named_parameters():
             l1_reg = l1_reg + W.norm(1)
         return l1_reg
