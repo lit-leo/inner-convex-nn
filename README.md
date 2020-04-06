@@ -9,6 +9,7 @@ Extreme sparsity by Input Convex Neural Networks.
 * AlexNET + CATS/DOGS
 
 ## Report & Presentation
+* https://youtu.be/QrcHkKbUOPg - video presentation
 * https://www.overleaf.com/read/hcvrgydykdtw – report source
 * https://www.overleaf.com/read/snxwfrszvtys – presentation source
 * https://skoltech.instructure.com/courses/2361/discussion_topics/10733 – general guidlines
