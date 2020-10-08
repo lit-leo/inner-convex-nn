@@ -24,6 +24,7 @@ class Dense(nn.Linear):
             l1_reg = l1_reg + W.norm(1)
         return l1_reg
 
+
 class PosDense(nn.Linear):
     def __init__(self, *args,**kwargs):
         super(PosDense, self).__init__(*args,**kwargs)
@@ -40,6 +41,7 @@ class PosDense(nn.Linear):
         for name, W in self.named_parameters():
             l1_reg = l1_reg + W.norm(1)
         return l1_reg
+
 
 class PosConv2d(nn.Conv2d):
     def __init__(self, *args,**kwargs):
